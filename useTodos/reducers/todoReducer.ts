@@ -1,6 +1,5 @@
 import { Todo } from "../types/Todo";
 
-// @ts-expect-error
 export const todoReducer = (initialState = [], action) => {
   switch (action.type) {
     case "[TODO] Add Todo":

@@ -1,10 +1,10 @@
 import { useEffect, useReducer } from "react";
 
-import { initialState } from "../data/initialDummyData";
+import { initialState } from "./data/initialDummyData";
 
-import { Todo } from "../types";
-import { todoReducer } from "../reducers";
-import { getItems, setItem } from "../services/LocalStorageRepository";
+import { Todo } from "./types/Todo";
+import { todoReducer } from "./reducers/todoReducer";
+import { getItems, setItem } from "./services/LocalStorageRepository";
 
 const init = () => {
   return getItems() || initialState;
